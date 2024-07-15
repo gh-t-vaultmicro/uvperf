@@ -1,7 +1,7 @@
 /*!*********************************************************************
  *   uvperf.c
- *   Version : V1.0.5
- *   Author : usiop-vault
+ *   Version : V1.0.6
+ *   Author : gh-t-vaultmicro
  *   This is a simple utility to test the performance of USB transfers.
  *   It is designed to be used with the libusbK driver.
  *   The utility will perform a series of transfers to the specified endpoint
