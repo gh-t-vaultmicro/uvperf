@@ -6,8 +6,6 @@
 *.out
 *.o
 *.obj
-build/
-lib/
 
 ### C ###
 # Prerequisites
