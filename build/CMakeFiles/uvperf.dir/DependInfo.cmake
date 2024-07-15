@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/log.c" "CMakeFiles/uvperf.dir/log.c.obj" "gcc" "CMakeFiles/uvperf.dir/log.c.obj.d"
-  "C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/uvperf.c" "CMakeFiles/uvperf.dir/uvperf.c.obj" "gcc" "CMakeFiles/uvperf.dir/uvperf.c.obj.d"
+  "C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/src/log.c" "CMakeFiles/uvperf.dir/src/log.c.obj" "gcc" "CMakeFiles/uvperf.dir/src/log.c.obj.d"
+  "C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/src/uvperf.c" "CMakeFiles/uvperf.dir/src/uvperf.c.obj" "gcc" "CMakeFiles/uvperf.dir/src/uvperf.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

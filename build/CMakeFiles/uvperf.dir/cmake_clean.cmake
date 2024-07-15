@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/uvperf.dir/log.c.obj"
-  "CMakeFiles/uvperf.dir/log.c.obj.d"
-  "CMakeFiles/uvperf.dir/uvperf.c.obj"
-  "CMakeFiles/uvperf.dir/uvperf.c.obj.d"
+  "CMakeFiles/uvperf.dir/src/log.c.obj"
+  "CMakeFiles/uvperf.dir/src/log.c.obj.d"
+  "CMakeFiles/uvperf.dir/src/uvperf.c.obj"
+  "CMakeFiles/uvperf.dir/src/uvperf.c.obj.d"
   "libuvperf.dll.a"
   "uvperf.exe"
   "uvperf.exe.manifest"

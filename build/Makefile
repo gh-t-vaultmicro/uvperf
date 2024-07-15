@@ -128,53 +128,53 @@ uvperf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/build
 .PHONY : uvperf/fast
 
-log.obj: log.c.obj
-.PHONY : log.obj
+src/log.obj: src/log.c.obj
+.PHONY : src/log.obj
 
 # target to build an object file
-log.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/log.c.obj
-.PHONY : log.c.obj
+src/log.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/log.c.obj
+.PHONY : src/log.c.obj
 
-log.i: log.c.i
-.PHONY : log.i
+src/log.i: src/log.c.i
+.PHONY : src/log.i
 
 # target to preprocess a source file
-log.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/log.c.i
-.PHONY : log.c.i
+src/log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/log.c.i
+.PHONY : src/log.c.i
 
-log.s: log.c.s
-.PHONY : log.s
+src/log.s: src/log.c.s
+.PHONY : src/log.s
 
 # target to generate assembly for a file
-log.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/log.c.s
-.PHONY : log.c.s
+src/log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/log.c.s
+.PHONY : src/log.c.s
 
-uvperf.obj: uvperf.c.obj
-.PHONY : uvperf.obj
+src/uvperf.obj: src/uvperf.c.obj
+.PHONY : src/uvperf.obj
 
 # target to build an object file
-uvperf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/uvperf.c.obj
-.PHONY : uvperf.c.obj
+src/uvperf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/uvperf.c.obj
+.PHONY : src/uvperf.c.obj
 
-uvperf.i: uvperf.c.i
-.PHONY : uvperf.i
+src/uvperf.i: src/uvperf.c.i
+.PHONY : src/uvperf.i
 
 # target to preprocess a source file
-uvperf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/uvperf.c.i
-.PHONY : uvperf.c.i
+src/uvperf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/uvperf.c.i
+.PHONY : src/uvperf.c.i
 
-uvperf.s: uvperf.c.s
-.PHONY : uvperf.s
+src/uvperf.s: src/uvperf.c.s
+.PHONY : src/uvperf.s
 
 # target to generate assembly for a file
-uvperf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/uvperf.c.s
-.PHONY : uvperf.c.s
+src/uvperf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/uvperf.c.s
+.PHONY : src/uvperf.c.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... uvperf
-	@echo ... log.obj
-	@echo ... log.i
-	@echo ... log.s
-	@echo ... uvperf.obj
-	@echo ... uvperf.i
-	@echo ... uvperf.s
+	@echo ... src/log.obj
+	@echo ... src/log.i
+	@echo ... src/log.s
+	@echo ... src/uvperf.obj
+	@echo ... src/uvperf.i
+	@echo ... src/uvperf.s
 .PHONY : help
 
 

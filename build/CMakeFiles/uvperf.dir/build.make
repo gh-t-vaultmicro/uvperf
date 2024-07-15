@@ -68,46 +68,46 @@ include CMakeFiles/uvperf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/uvperf.dir/flags.make
 
-CMakeFiles/uvperf.dir/uvperf.c.obj: CMakeFiles/uvperf.dir/flags.make
-CMakeFiles/uvperf.dir/uvperf.c.obj: CMakeFiles/uvperf.dir/includes_C.rsp
-CMakeFiles/uvperf.dir/uvperf.c.obj: C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/uvperf.c
-CMakeFiles/uvperf.dir/uvperf.c.obj: CMakeFiles/uvperf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/uvperf.dir/uvperf.c.obj"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uvperf.dir/uvperf.c.obj -MF CMakeFiles\uvperf.dir\uvperf.c.obj.d -o CMakeFiles\uvperf.dir\uvperf.c.obj -c C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\uvperf.c
+CMakeFiles/uvperf.dir/src/uvperf.c.obj: CMakeFiles/uvperf.dir/flags.make
+CMakeFiles/uvperf.dir/src/uvperf.c.obj: CMakeFiles/uvperf.dir/includes_C.rsp
+CMakeFiles/uvperf.dir/src/uvperf.c.obj: C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/src/uvperf.c
+CMakeFiles/uvperf.dir/src/uvperf.c.obj: CMakeFiles/uvperf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/uvperf.dir/src/uvperf.c.obj"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uvperf.dir/src/uvperf.c.obj -MF CMakeFiles\uvperf.dir\src\uvperf.c.obj.d -o CMakeFiles\uvperf.dir\src\uvperf.c.obj -c C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\src\uvperf.c
 
-CMakeFiles/uvperf.dir/uvperf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uvperf.dir/uvperf.c.i"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\uvperf.c > CMakeFiles\uvperf.dir\uvperf.c.i
+CMakeFiles/uvperf.dir/src/uvperf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uvperf.dir/src/uvperf.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\src\uvperf.c > CMakeFiles\uvperf.dir\src\uvperf.c.i
 
-CMakeFiles/uvperf.dir/uvperf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uvperf.dir/uvperf.c.s"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\uvperf.c -o CMakeFiles\uvperf.dir\uvperf.c.s
+CMakeFiles/uvperf.dir/src/uvperf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uvperf.dir/src/uvperf.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\src\uvperf.c -o CMakeFiles\uvperf.dir\src\uvperf.c.s
 
-CMakeFiles/uvperf.dir/log.c.obj: CMakeFiles/uvperf.dir/flags.make
-CMakeFiles/uvperf.dir/log.c.obj: CMakeFiles/uvperf.dir/includes_C.rsp
-CMakeFiles/uvperf.dir/log.c.obj: C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/log.c
-CMakeFiles/uvperf.dir/log.c.obj: CMakeFiles/uvperf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uvperf.dir/log.c.obj"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uvperf.dir/log.c.obj -MF CMakeFiles\uvperf.dir\log.c.obj.d -o CMakeFiles\uvperf.dir\log.c.obj -c C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\log.c
+CMakeFiles/uvperf.dir/src/log.c.obj: CMakeFiles/uvperf.dir/flags.make
+CMakeFiles/uvperf.dir/src/log.c.obj: CMakeFiles/uvperf.dir/includes_C.rsp
+CMakeFiles/uvperf.dir/src/log.c.obj: C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/src/log.c
+CMakeFiles/uvperf.dir/src/log.c.obj: CMakeFiles/uvperf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/uvperf.dir/src/log.c.obj"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/uvperf.dir/src/log.c.obj -MF CMakeFiles\uvperf.dir\src\log.c.obj.d -o CMakeFiles\uvperf.dir\src\log.c.obj -c C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\src\log.c
 
-CMakeFiles/uvperf.dir/log.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uvperf.dir/log.c.i"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\log.c > CMakeFiles\uvperf.dir\log.c.i
+CMakeFiles/uvperf.dir/src/log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/uvperf.dir/src/log.c.i"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\src\log.c > CMakeFiles\uvperf.dir\src\log.c.i
 
-CMakeFiles/uvperf.dir/log.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uvperf.dir/log.c.s"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\log.c -o CMakeFiles\uvperf.dir\log.c.s
+CMakeFiles/uvperf.dir/src/log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/uvperf.dir/src/log.c.s"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\src\log.c -o CMakeFiles\uvperf.dir\src\log.c.s
 
 # Object files for target uvperf
 uvperf_OBJECTS = \
-"CMakeFiles/uvperf.dir/uvperf.c.obj" \
-"CMakeFiles/uvperf.dir/log.c.obj"
+"CMakeFiles/uvperf.dir/src/uvperf.c.obj" \
+"CMakeFiles/uvperf.dir/src/log.c.obj"
 
 # External object files for target uvperf
 uvperf_EXTERNAL_OBJECTS =
 
-uvperf.exe: CMakeFiles/uvperf.dir/uvperf.c.obj
-uvperf.exe: CMakeFiles/uvperf.dir/log.c.obj
+uvperf.exe: CMakeFiles/uvperf.dir/src/uvperf.c.obj
+uvperf.exe: CMakeFiles/uvperf.dir/src/log.c.obj
 uvperf.exe: CMakeFiles/uvperf.dir/build.make
 uvperf.exe: C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/lib/libusbK.lib
 uvperf.exe: CMakeFiles/uvperf.dir/linkLibs.rsp

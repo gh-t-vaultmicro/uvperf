@@ -3,7 +3,7 @@
 #include <sys/time.h>
 #include <time.h>
 
-#include "include/log.h"
+#include "log.h"
 
 int LogPrint(const int line, const char *func, const char *format, ...)
 {
