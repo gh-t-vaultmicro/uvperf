@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 #include "fileio.h"
-#include "setting.h"
 
 void FileIOOpen(PUVPERF_PARAM TestParams) {
     time_t now = time(NULL);

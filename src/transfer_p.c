@@ -1,10 +1,9 @@
 #include <windows.h>
 #include "lusbk_linked_list.h"
 
-#include "setting.h"
 #include "log.h"
 #include "k.h"
-#include "transfer_p.h"
+#include "transfer_p.h" 
 
 
 void AppendLoopBuffer(PUVPERF_PARAM TestParams, unsigned char *buffer, unsigned int length) {

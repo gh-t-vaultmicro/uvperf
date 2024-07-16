@@ -1,6 +1,5 @@
 #include <windows.h>
 
-#include "setting.h"
 #include "log.h"
 #include "k.h"
 #include "benchmark.h"

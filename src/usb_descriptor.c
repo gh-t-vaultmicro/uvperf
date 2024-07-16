@@ -11,7 +11,7 @@ void ShowMenu() {
 
 }
 
-void ShowEndpointDescriptor(libusb_device *dev, int interface_index, int endpoint_index) {
+void ShowEndpointDescriptor(libusb_device *dev, int interface_index, int altinterface_index, int endpoint_index) {
     struct libusb_config_descriptor *config;
     const struct libusb_interface *interface;
     const struct libusb_interface_descriptor *altsetting;
@@ -24,7 +24,7 @@ void ShowEndpointDescriptor(libusb_device *dev, int interface_index, int endpoin
     }
 
     interface = &config->interface[interface_index];
-    altsetting = &interface->altsetting[0];
+    altsetting = &interface->altsetting[altinterface_index];
     endpoint = &altsetting->endpoint[endpoint_index];
 
     LOG_MSG("Endpoint Descriptor:\n");
@@ -38,7 +38,7 @@ void ShowEndpointDescriptor(libusb_device *dev, int interface_index, int endpoin
     libusb_free_config_descriptor(config);
 }
 
-void ShowInterfaceDescriptor(libusb_device *dev, int interface_index) {
+void ShowInterfaceDescriptor(libusb_device *dev, int interface_index, int altinterface_index) {
     struct libusb_config_descriptor *config;
     const struct libusb_interface *interface;
     const struct libusb_interface_descriptor *altsetting;
@@ -50,7 +50,7 @@ void ShowInterfaceDescriptor(libusb_device *dev, int interface_index) {
     }
 
     interface = &config->interface[interface_index];
-    altsetting = &interface->altsetting[0];
+    altsetting = &interface->altsetting[altinterface_index];
 
     LOG_MSG("Interface Descriptor:\n");
     LOG_MSG("  bLength: %d\n", altsetting->bLength);

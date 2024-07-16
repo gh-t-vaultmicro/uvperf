@@ -34,15 +34,15 @@
  *
  ********************************************************************!*/
 #include <windows.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <wtypes.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <conio.h>
+//#include <wtypes.h>
 
-#include <stdarg.h>
-#include <string.h>
-#include <time.h>
-#include <unistd.h>
+//#include <stdarg.h>
+//#include <string.h>
+//#include <time.h>
+//#include <unistd.h>
 
 //included libusbk //erase one by one
 #include "libusbk.h"
@@ -236,47 +236,65 @@ int main(int argc, char **argv) {
         goto Final;
     }
 
-    ShowMenu();
-
-    LOG_MSG("Enter your choice: ");
-    key = _getch();
     printf("\n");
-    int interface_index, endpoint_index;
+    int interface_index, altinterface_index, endpoint_index;
 
-    if (key != '\r') {  // If not Enter key
+    while (1) {
+        ShowMenu();
+
+        LOG_MSG("Enter your choice: ");
+        key = _getch();
+        printf("\n");
+
+        if (key == '\r') {  // Enter key가 눌린 경우 무시
+            continue;
+        }
+
         switch (key) {
             case 'e':
                 LOG_MSG("Enter interface index: ");
                 scanf("%d", &interface_index);
+                LOG_MSG("Enter alternative interface index: ");
+                scanf("%d", &altinterface_index);
                 LOG_MSG("Enter endpoint index: ");
                 scanf("%d", &endpoint_index);
-                ShowEndpointDescriptor(libusb_get_device(handle), interface_index, endpoint_index);
+                ShowEndpointDescriptor(libusb_get_device(handle), interface_index, altinterface_index, endpoint_index);
+                LOG_MSG("\n");
                 break;
             case 'i':
-            //interface0 set as bulk transfer
-            //interface1 set as isochronous transfe
-            //ref find_usb.py 
+                // interface0 set as bulk transfer
+                // interface1 set as isochronous transfer
+                // ref find_usb.py 
                 LOG_MSG("Enter interface index: ");
                 scanf("%d", &interface_index);
-                ShowInterfaceDescriptor(libusb_get_device(handle), interface_index);
+                LOG_MSG("Enter alternative interface index: ");
+                scanf("%d", &altinterface_index);
+                ShowInterfaceDescriptor(libusb_get_device(handle), interface_index, altinterface_index);
+                LOG_MSG("\n");
                 break;
             case 'c':
                 ShowConfigurationDescriptor(libusb_get_device(handle));
+                LOG_MSG("\n");
                 break;
             case 'd':
                 ShowDeviceDescriptor(libusb_get_device(handle));
+                LOG_MSG("\n");
                 break;
             case 't':
                 PerformTransfer();
+                LOG_MSG("\n");
                 break;
             case 'q':
+                LOG_MSG("\n");
                 LOG_MSG("User Aborted\n");
                 return 0;
             default:
                 LOGERR0("Invalid input\n");
+                LOG_MSG("\n");
                 break;
         }
     }
+
 
     ShowDeviceInterfaces(libusb_get_device(handle));
 

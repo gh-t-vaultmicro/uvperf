@@ -1,6 +1,5 @@
 #include "log.h"
 #include "param.h"
-#include "setting.h"
 
 void ShowParams(PUVPERF_PARAM TestParams) {
     if (!TestParams)
