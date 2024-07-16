@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5
+CMAKE_SOURCE_DIR = C:\Users\Gyuho\VaultMicro\git\uvperf-1.1.1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build
+CMAKE_BINARY_DIR = C:\Users\Gyuho\VaultMicro\git\uvperf-1.1.1\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\CMakeFiles C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Gyuho\VaultMicro\git\uvperf-1.1.1\build\CMakeFiles C:\Users\Gyuho\VaultMicro\git\uvperf-1.1.1\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Gyuho\VaultMicro\git\uvperf-1.0.5\uvperf-1.0.5\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Gyuho\VaultMicro\git\uvperf-1.1.1\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,54 @@ uvperf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/build
 .PHONY : uvperf/fast
 
+src/benchmark.obj: src/benchmark.c.obj
+.PHONY : src/benchmark.obj
+
+# target to build an object file
+src/benchmark.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/benchmark.c.obj
+.PHONY : src/benchmark.c.obj
+
+src/benchmark.i: src/benchmark.c.i
+.PHONY : src/benchmark.i
+
+# target to preprocess a source file
+src/benchmark.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/benchmark.c.i
+.PHONY : src/benchmark.c.i
+
+src/benchmark.s: src/benchmark.c.s
+.PHONY : src/benchmark.s
+
+# target to generate assembly for a file
+src/benchmark.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/benchmark.c.s
+.PHONY : src/benchmark.c.s
+
+src/fileio.obj: src/fileio.c.obj
+.PHONY : src/fileio.obj
+
+# target to build an object file
+src/fileio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/fileio.c.obj
+.PHONY : src/fileio.c.obj
+
+src/fileio.i: src/fileio.c.i
+.PHONY : src/fileio.i
+
+# target to preprocess a source file
+src/fileio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/fileio.c.i
+.PHONY : src/fileio.c.i
+
+src/fileio.s: src/fileio.c.s
+.PHONY : src/fileio.s
+
+# target to generate assembly for a file
+src/fileio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/fileio.c.s
+.PHONY : src/fileio.c.s
+
 src/log.obj: src/log.c.obj
 .PHONY : src/log.obj
 
@@ -151,6 +199,102 @@ src/log.s: src/log.c.s
 src/log.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/log.c.s
 .PHONY : src/log.c.s
+
+src/param.obj: src/param.c.obj
+.PHONY : src/param.obj
+
+# target to build an object file
+src/param.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/param.c.obj
+.PHONY : src/param.c.obj
+
+src/param.i: src/param.c.i
+.PHONY : src/param.i
+
+# target to preprocess a source file
+src/param.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/param.c.i
+.PHONY : src/param.c.i
+
+src/param.s: src/param.c.s
+.PHONY : src/param.s
+
+# target to generate assembly for a file
+src/param.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/param.c.s
+.PHONY : src/param.c.s
+
+src/setting.obj: src/setting.c.obj
+.PHONY : src/setting.obj
+
+# target to build an object file
+src/setting.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/setting.c.obj
+.PHONY : src/setting.c.obj
+
+src/setting.i: src/setting.c.i
+.PHONY : src/setting.i
+
+# target to preprocess a source file
+src/setting.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/setting.c.i
+.PHONY : src/setting.c.i
+
+src/setting.s: src/setting.c.s
+.PHONY : src/setting.s
+
+# target to generate assembly for a file
+src/setting.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/setting.c.s
+.PHONY : src/setting.c.s
+
+src/transfer_p.obj: src/transfer_p.c.obj
+.PHONY : src/transfer_p.obj
+
+# target to build an object file
+src/transfer_p.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/transfer_p.c.obj
+.PHONY : src/transfer_p.c.obj
+
+src/transfer_p.i: src/transfer_p.c.i
+.PHONY : src/transfer_p.i
+
+# target to preprocess a source file
+src/transfer_p.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/transfer_p.c.i
+.PHONY : src/transfer_p.c.i
+
+src/transfer_p.s: src/transfer_p.c.s
+.PHONY : src/transfer_p.s
+
+# target to generate assembly for a file
+src/transfer_p.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/transfer_p.c.s
+.PHONY : src/transfer_p.c.s
+
+src/usb_descriptor.obj: src/usb_descriptor.c.obj
+.PHONY : src/usb_descriptor.obj
+
+# target to build an object file
+src/usb_descriptor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/usb_descriptor.c.obj
+.PHONY : src/usb_descriptor.c.obj
+
+src/usb_descriptor.i: src/usb_descriptor.c.i
+.PHONY : src/usb_descriptor.i
+
+# target to preprocess a source file
+src/usb_descriptor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/usb_descriptor.c.i
+.PHONY : src/usb_descriptor.c.i
+
+src/usb_descriptor.s: src/usb_descriptor.c.s
+.PHONY : src/usb_descriptor.s
+
+# target to generate assembly for a file
+src/usb_descriptor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\uvperf.dir\build.make CMakeFiles/uvperf.dir/src/usb_descriptor.c.s
+.PHONY : src/usb_descriptor.c.s
 
 src/uvperf.obj: src/uvperf.c.obj
 .PHONY : src/uvperf.obj
@@ -185,9 +329,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... uvperf
+	@echo ... src/benchmark.obj
+	@echo ... src/benchmark.i
+	@echo ... src/benchmark.s
+	@echo ... src/fileio.obj
+	@echo ... src/fileio.i
+	@echo ... src/fileio.s
 	@echo ... src/log.obj
 	@echo ... src/log.i
 	@echo ... src/log.s
+	@echo ... src/param.obj
+	@echo ... src/param.i
+	@echo ... src/param.s
+	@echo ... src/setting.obj
+	@echo ... src/setting.i
+	@echo ... src/setting.s
+	@echo ... src/transfer_p.obj
+	@echo ... src/transfer_p.i
+	@echo ... src/transfer_p.s
+	@echo ... src/usb_descriptor.obj
+	@echo ... src/usb_descriptor.i
+	@echo ... src/usb_descriptor.s
 	@echo ... src/uvperf.obj
 	@echo ... src/uvperf.i
 	@echo ... src/uvperf.s

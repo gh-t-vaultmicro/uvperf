@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5
+# Install script for directory: C:/Users/Gyuho/VaultMicro/git/uvperf-1.1.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/Gyuho/VaultMicro/git/uvperf-1.0.5/uvperf-1.0.5/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/Gyuho/VaultMicro/git/uvperf-1.1.1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

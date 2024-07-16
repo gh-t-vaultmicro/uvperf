@@ -4,8 +4,18 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+//show how to use programme
+void ShowUsage();
+
 // Forward declaration of the LogPrint function with variable arguments
 int LogPrint(const int line, const char *func, const char *format, ...);
+
+#define LOG_VERBOSE(format, ...)                                                                   \
+    do {                                                                                           \
+        if (verbose)                                                                               \
+            printf(format, ##__VA_ARGS__);                                                         \
+    } while (0)
+
 
 // Helper macro to print a specific type of log data
 #define LOGVDAT(format, ...) printf("[data-mismatch] " format "\n", ##__VA_ARGS__)

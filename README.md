@@ -8,7 +8,7 @@ USBdevice Vault perf 테스트 툴을 사용하여, host<->device의 Bulk In, Bu
 3. Install libusbK(v3.1.0.0)
 ## uvperf.c
 1. gcc로 컴파일 할 경우 링크 경로 지정 -> -L"{libusbk.dll 경로}" -l"usb"
-2. CMake
+2. CMake, MinGW 사용, script 폴더의 uvperf_build, uvperf_exe 참조
 3. Visual Studio로 컴파일 할 경우 ->  #pragma comment(lib, "libusbk.lib") 추가
 ## Usage of uvperf
 

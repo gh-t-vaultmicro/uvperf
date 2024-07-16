@@ -24,6 +24,13 @@ set(CMAKE_CXX_COMPILER "g++")
 set(SOURCE_FILES
 	${CMAKE_SOURCE_DIR}/src/uvperf.c
     	${CMAKE_SOURCE_DIR}/src/log.c
+    	${CMAKE_SOURCE_DIR}/src/usb_descriptor.c
+    	${CMAKE_SOURCE_DIR}/src/fileio.c
+    	${CMAKE_SOURCE_DIR}/src/param.c
+    	${CMAKE_SOURCE_DIR}/src/transfer_p.c
+    	${CMAKE_SOURCE_DIR}/src/benchmark.c
+    	${CMAKE_SOURCE_DIR}/src/setting.c
+
 )
 
 
