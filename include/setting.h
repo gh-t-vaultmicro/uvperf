@@ -2,14 +2,14 @@
 #define SETTING_H
 
 #include <conio.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+//#include <stdarg.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
 #include <time.h>
-#include <unistd.h>
+//#include <unistd.h>
 #include <windows.h>
-#include <wtypes.h>
+//#include <wtypes.h>
 
 #include "libusbk.h"
 #include "log.h"
@@ -125,7 +125,6 @@ typedef struct _UVPERF_PARAM {
 
     unsigned char defaultAltSetting;
 } UVPERF_PARAM, *PUVPERF_PARAM;
-
 
 
 typedef struct _UVPERF_TRANSFER_HANDLE {

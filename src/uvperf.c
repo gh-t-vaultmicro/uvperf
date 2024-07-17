@@ -34,15 +34,15 @@
  *
  ********************************************************************!*/
 #include <windows.h>
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <conio.h>
-//#include <wtypes.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <wtypes.h>
 
-//#include <stdarg.h>
-//#include <string.h>
-//#include <time.h>
-//#include <unistd.h>
+#include <stdarg.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
 
 //included libusbk //erase one by one
 #include "libusbk.h"
@@ -238,17 +238,15 @@ int main(int argc, char **argv) {
 
     printf("\n");
     int interface_index, altinterface_index, endpoint_index;
+    int lock = 0;
+    while (lock != '\r' && lock != 't') {
 
-    while (1) {
         ShowMenu();
 
         LOG_MSG("Enter your choice: ");
         key = _getch();
+        lock = key;
         printf("\n");
-
-        if (key == '\r') {  // Enter key가 눌린 경우 무시
-            continue;
-        }
 
         switch (key) {
             case 'e':
